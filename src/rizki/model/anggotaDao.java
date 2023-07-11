@@ -3,25 +3,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package rizki.model;
-import java.util.*;
 
+import java.util.*;
 /**
  *
  * @author rizky
  */
-public class anggotaDao {
-    private List<anggota> data = new ArrayList();
+public class AnggotaDao {
+    private List<Anggota> data = new ArrayList();
     
-    public anggotaDao(){
-        data.add(new anggota("A001","Ali","Padang","L"));
-        data.add(new anggota("A002","Ani","Pekanbaru","P"));
+    public AnggotaDao(){
+        data.add(new Anggota ("112","Rizki","Limau Manis","L"));
+        data.add(new Anggota ("113","Rizki Rizki","Pauh","L"));
+        
     }
     
-    public void insert(anggota anggota){
+    public void insert(Anggota anggota){
         data.add(anggota);
     }
-    
-    public void update(int index,anggota anggota){
+    public void update(int index, Anggota anggota){
         data.set(index, anggota);
     }
     
@@ -29,11 +29,11 @@ public class anggotaDao {
         data.remove(index);
     }
     
-    public anggota getAnggota(int index){
+    public Anggota getAnggota(int index){
         return data.get(index);
     }
     
-    public List<anggota> getAll(){
+    public List<Anggota>getAll(){
         return data;
     }
 }
